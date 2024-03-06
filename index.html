@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <input type="text" placeholder="idInstance" id="idInstance"><br>
+            <input type="text" placeholder="apiTokenInstance" id="apiTokenInstance"><br>
+            <button id="getSettings" onclick="getSettings()">Get Settings</button>
+            <button id="getStateInstance" onclick="getStateInstance()">Get State Instance</button>
+            <input type="text" placeholder="Phone Number" id="phoneNumber"><br>
+            <input type="text" placeholder="text message" id="messageText"><br>
+            <button id="sendMessage" onclick="sendMessage()">Send Message</button>
+            <input type="text" placeholder="Phone Number" id="phoneNumber2"><br>
+            <input type="text" placeholder="URL" id="url"><br>
+            <button id="sendFileByUrl" onclick="sendFileByUrl()">Send File by URL</button>
+        </div>
+        <div class="column">
+		    <label for="responseField">Ответ:</label>
+            <div id="responseField"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
